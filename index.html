@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conecta Cidadania</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/SEU_KIT_AQUI.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <img src="assets/img/logo3.png" alt="Logo Conecta Cidadania">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+	<li><a href="#doacoes">Doações</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seção Hero (Home) -->
+  <section id="home" class="hero">
+    <h1>Bem-vindo ao Conecta Cidadania</h1>
+    <p>Acreditamos na força da comunidade para transformar vidas.</p>
+  </section>
+
+  <!-- Seção Sobre -->
+<section id="sobre" class="sobre">
+  <div class="sobre-conteudo">
+    <div class="texto">
+      <h2>Sobre a ONG Conecta Cidadania</h2>
+      <p>Somos uma organização comprometida com a transformação social, oferecendo recursos e apoio para a comunidade em diversas áreas. Nosso objetivo é fazer a diferença no dia a dia das pessoas, proporcionando uma cidadania mais ativa e conectada.</p>
+    </div>
+    <div class="imagem">
+      <img src="assets/img/about.jpg" alt="Imagem da ONG">
+    </div>
+  </div>
+</section>
+
+
+  <!-- Seção Projetos -->
+  <section id="projetos" class="projects">
+    <h2>Projetos em Destaque</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <img src="assets/img/projeto1.jpg" alt="Projeto 1">
+        <h3>Inclusão Digital</h3>
+        <p>Aulas de Word, Excel, navegação na internet e criação de curriculo para promover inclusão digital em comunidades carentes.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/projeto2.jpg" alt="Projeto 2">
+        <h3>Cursos de Informatica</h3>
+        <p>Aulas de programação, montagem e manutenção de computadores para jovens em situação de vulnerabilidade social.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/projeto3.jpg" alt="Projeto 3">
+        <h3>Doações de Alimentos</h3>
+        <p>Distribuição de cestas básicas e refeições por voluntários em comunidades em situação de vulnerabilidade.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/img/projeto4.jpg" alt="Projeto 3">
+        <h3>Suporte Técnico</h3>
+        <p>Serviço voluntário de suporte técnico para conserto e manutenção de computadores, auxiliando escolas e famílias de comunidades carentes a manterem seus dispositivos em funcionamento.</p>
+      </div>
+    </div>
+  </section>
+<section id="doacoes" class="doacoes">
+  <div class="content-doacoes">
+    <h2><i class="fas fa-donate"></i> Apoie a Conecta Cidadania</h2>
+    <p>Escolha uma forma de ajudar. Toda contribuição faz a diferença!</p>
+
+    <div class="doacao-cards-horizontal">
+      <div class="doacao-card">
+        <i class="fas fa-utensils"></i>
+        <h3>Alimentos</h3>
+        <p>Ajude com alimentos não perecíveis.</p>
+        <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Quero Ajudar</button>
+      </div>
+      <div class="doacao-card">
+        <i class="fas fa-tshirt"></i>
+        <h3>Eletrônicos</h3>
+        <p>Doe equipamentos eletrônicos.</p>
+        <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Quero Ajudar</button>
+      </div>
+      <div class="doacao-card">
+        <i class="fas fa-book"></i>
+        <h3>Livros</h3>
+        <p>Contribua com livros educativos.</p>
+        <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Quero Ajudar</button>
+      </div>
+      <div class="doacao-card">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Voluntário</h3>
+        <p>Participe das ações sociais.</p>
+        <button onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Quero Ajudar</button>
+      </div>
+      <div class="doacao-card">
+        <i class="fas fa-coins"></i>
+        <h3>Financeira</h3>
+        <p>Faça uma doação de qualquer valor.</p>
+        <button onclick="abrirModal()">Quero Ajudar</button>
+<div id="modalPix" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <h3>Chave PIX</h3>
+    <img src="qrcode.png" alt="QR Code PIX" width="200">
+    <p>Escaneie com seu app do seu banco</p>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Seção Contato -->
+<section id="contato" class="contato">
+  <div class="content">
+    <h2>Fale Conosco</h2>
+    <form class="contact-form">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="phone" id="telefone" name="telefone" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="8" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p class="paragrafo-one">&copy; 2025 Conecta Cidadania. Todos os direitos reservados.</p>
+    <p>Rua Coronel João Santa Cruz, S/N - Centro, Monteiro - PB, CEP 58500-000</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
